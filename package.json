@@ -4,7 +4,9 @@
   "description": "A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "url": "git+https://github.com/OmarElGabry/chat.io.git",
@@ -30,8 +32,10 @@
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "redis": "^2.6.2",
-    "socket.io": "^1.4.8",
-    "socket.io-redis": "^1.0.0",
-    "winston": "^2.2.0"
-  }
+    "socket.io": "^2.0.2",
+    "socket.io-redis": "^5.1.0",
+    "winston": "^2.2.0",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
